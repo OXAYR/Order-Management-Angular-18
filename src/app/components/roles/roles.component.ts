@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 // componennt decorator: that it will provide the information about the class
 
 @Component({
   selector: 'app-roles',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './roles.component.html',
   styleUrl: './roles.component.css',
 })
@@ -15,4 +16,5 @@ export class RolesComponent {
   version: number = 18;
   isActive: Boolean = true;
   currentDate: Date = new Date();
+  inputText: string = '';
 }
