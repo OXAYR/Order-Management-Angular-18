@@ -5,4 +5,13 @@
 <div>
   <input class="border px-4" [(ngModel)]="inputText" type="text" />
 </div>
+<div class="">
+  <button class="bg-purple-400 text-purple-900" (click)="showWelcomeAlert()">
+    Show Alert
+  </button>
+
+  <button class="bg-purple-400 text-purple-900" (click)="showMessage('hello')">
+    Show Alert
+  </button>
+</div>
 {{ inputText }}

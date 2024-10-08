@@ -17,4 +17,12 @@ export class RolesComponent {
   isActive: Boolean = true;
   currentDate: Date = new Date();
   inputText: string = '';
+
+  showWelcomeAlert() {
+    alert('Welcome to my Angular Project');
+  }
+
+  showMessage(message: string) {
+    alert(message);
+  }
 }
